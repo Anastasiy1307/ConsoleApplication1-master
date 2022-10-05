@@ -12,7 +12,7 @@
 #define y2 4
 #define y3 6
 #define del 2
-#define CH(x1,x2,x3,y1,y2,y3) (x1 - x3) * (y2 - y3) - (x2 - x3) * (y1 - y3)
+#define CH(x1,x2,x3,y1,y2,y3) (x1 - x3) * (y2 - y3) - (x2 - x3) * (y1 - y3)//проверка
 #define pl (CH(x1, x2, x3, y1, y2, y3)) / del
 
 
