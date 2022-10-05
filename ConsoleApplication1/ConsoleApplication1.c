@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 #define POW(X) pow(X,2)
-#define Length(x,y) sqrtf(x+y)
+#define Length(x,y) sqrtf(x+y)//Длинна
 #define ABC(x) abs(x)
 #define x1 1
 #define x2 2
