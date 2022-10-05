@@ -1,19 +1,17 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+﻿#define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #define POW(X) pow(X,2)
-#define Length(x,y) sqrtf(x+y)
+#define Length(x,y) sqrtf(x+y)//Длинна
 #define ABC(x) abs(x)
 #define x1 1
 #define x2 2
 #define x3 3
-#define y1 2
-#define y2 4
-#define y3 6
-#define del 2
+#define y1 1
+#define y2 3
+#define y3 9
 #define CH(x1,x2,x3,y1,y2,y3) (x1 - x3) * (y2 - y3) - (x2 - x3) * (y1 - y3)
-#define pl (CH(x1, x2, x3, y1, y2, y3)) / del
 
 
 int main()
@@ -24,10 +22,6 @@ int main()
 #if ((x1 == x2) && (x2 == x3))
     {
         printf("Три точки образуют вектор");
-    }
-#elif ( pl == 0)
-    {
-        printf("Стороны лежат на одной прямой");
     }
 #elif ((y1 == y2) && (y2 == y3))
     {
@@ -45,7 +39,6 @@ int main()
     {
         printf("Три точки образуют вектор");
     }
-
 #else
     {
         otr1 = Length((POW((x2 - x1))), (POW((y2 - y1))));
